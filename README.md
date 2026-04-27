@@ -1,73 +1,148 @@
-# React + TypeScript + Vite
+# Intelligent Automation Request Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React + TypeScript prototype for managing automation requests with AI workflow recommendations.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Screenshots
 
-## React Compiler
+### Dashboard Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+![Dashboard](screenshots/FullPage1.png)
 
-## Expanding the ESLint configuration
+### AI Recommendation Analysis
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+![AI Recommendation](screenshots/AIRecommendation.png)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Analyze Requests
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+![Analyze Requests](screenshots/AnalyzeRequests.png)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Application Overview
+
+![Overview](screenshots/FullPage2.png)
+
+---
+
+## Overview
+
+This project simulates an intelligent automation intake application where business users can submit automation requests and receive AI-assisted workflow recommendations.
+
+Features include:
+
+- Automation request dashboard
+- AI request analysis
+- Request prioritization
+- Suggested workflow recommendations
+- Approval-oriented process mapping
+- Request details drawer
+- Status tracking
+
+---
+
+## Features
+
+### Request Management
+
+Capture requests including:
+
+- Department
+- Request Type
+- Description
+- Expected Benefit
+- Priority
+- Request Status
+
+---
+
+### AI Recommendation Engine (Prototype)
+
+Generates:
+
+- AI Summary
+- Suggested Category
+- Suggested Priority
+- Recommended Next Step
+- Flow Suggestion
+
+---
+
+### Dynamic Workflow Suggestions
+
+Example Approval Flow
+
+Trigger  
+↓  
+Manager Approval  
+↓  
+Conditional Outcome  
+↓  
+Update Status
+
+---
+
+## Tech Stack
+
+- React
+- TypeScript
+- Vite
+- Fluent UI
+- Node.js
+- GitHub Models API (prototype integration approach)
+
+---
+
+## Run Locally
+
+Install dependencies
+
+```bash
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Run locally
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run dev
 ```
+
+Open:
+
+```text
+http://localhost:5173
+```
+
+---
+
+## Project Structure
+
+```text
+src/
+ ├── components/
+ ├── services/
+ ├── models/
+ └── App.tsx
+
+screenshots/
+```
+
+---
+
+## Future Enhancements
+
+Planned:
+
+- GitHub Models / OpenAI integration
+- Power Automate flow generation
+- Dataverse integration
+- PCF control reuse
+- Workflow export as JSON
+- Approval simulation engine
+
+---
+
+## Author
+
+Jocelyn Zavala Fara
+
+Microsoft 365 | SharePoint | Power Platform | SPFx | Dataverse
