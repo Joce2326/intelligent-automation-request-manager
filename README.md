@@ -8,21 +8,19 @@ React + TypeScript prototype for managing automation requests with AI workflow r
 
 ### Dashboard Overview
 
-![Dashboard](screenshots/FullPage1.png)
+![Dashboard](screenshots/FullPage1.jpg)
 
 ### AI Recommendation Analysis
 
-![AI Recommendation](screenshots/AIRecommendation.png)
+![AI Recommendation](screenshots/AIRecommendation.jpg)
 
 ### Analyze Requests
 
-![Analyze Requests](screenshots/AnalyzeRequests.png)
+![Analyze Requests](screenshots/AnalyzeRequests.jpg)
 
 ### Application Overview
 
-![Overview](screenshots/FullPage2.png)
-
----
+![Overview](screenshots/FullPage2.jpg)
 
 ## Overview
 
